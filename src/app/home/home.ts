@@ -8,7 +8,9 @@ import { Product } from '../product/product';
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home {
+export class Home {constructor() {
+    console.log('Home component loaded');
+  }
   products = [
     { id: 1, title: 'Producto 1', price: 100 }, 
     { id: 2, title: 'Producto 2', price: 200 },

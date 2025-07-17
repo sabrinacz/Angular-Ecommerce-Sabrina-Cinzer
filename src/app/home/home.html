@@ -1,18 +1,17 @@
 <div>
     <p>
-        Comenzá a comprar
+        Comenzá a comprar...
     </p>
 
-    <h3>Nuestros productos</h3>
-    <div>
-        @if(products.length === 0) {
-            <p>No hay productos disponibles.</p>
-        } @else {
-            <p>Tenemos {{products.length}} productos disponibles.</p>
-        }
+   <h3>Nuestros productos</h3>
+    @if(products.length === 0) {
+        <p>No hay productos disponibles.</p>
+    } @else {
+        <p>Tenemos {{products.length}} productos disponibles.</p>
+    }
+    <div class="products-container">
         @for(product of products; track product.id) {
         <app-product [title]="product.title" [price]="product.price"></app-product>
       }
     </div>
-
 </div>
