@@ -1,0 +1,13 @@
+<div>
+    <p>
+        Comenzá a comprar
+    </p>
+
+    <h3>Nuestros productos</h3>
+    <div>
+        @for(product of products; track product.id) {
+        <app-product [title]="product.title" [price]="product.price"></app-product>
+      }
+    </div>
+
+</div>
