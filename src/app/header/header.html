@@ -1,0 +1,17 @@
+<header>
+  <div class="menu-container">
+    <div class="logo">MiLogo</div>
+
+    <nav>
+      <div class="menu-toggle" (click)="toggleMenu()">
+        {{ menuAbierto ? '✖' : '☰' }}
+      </div>
+      <ul class="nav-links" [class.active]="menuAbierto">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+        <li><a routerLink="/acerca">Acerca</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

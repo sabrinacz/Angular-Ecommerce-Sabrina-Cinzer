@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: var(--font-family, sans-serif);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+:host {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+    --font-family: "Inter", sans-serif;
+}
+
+p {
+    color: var(--gray-700, #555);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+}

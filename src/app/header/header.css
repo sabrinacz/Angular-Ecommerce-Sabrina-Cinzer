@@ -1,0 +1,72 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.menu-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+
+.menu-toggle {
+  position: relative;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 99999; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -70%; /* El menú inicia fuera de la pantalla */
+    background-color: #333;
+    flex-direction: column;
+    width: 30%; /* Menú ocupa el 30% del ancho */
+    height: 100vh; /* Menú ocupa toda la altura de la pantalla */
+    display: flex;
+    transition: right 0.3s ease; /* Suaviza el movimiento */
+    padding: 1rem;
+    z-index: 9; 
+  }
+
+  .nav-links.active {
+    right: 0; /* Menú se desliza hacia la pantalla */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
