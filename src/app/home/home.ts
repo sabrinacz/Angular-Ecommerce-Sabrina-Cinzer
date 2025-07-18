@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Products } from '../products/products';
 import { ProductsService, ProductInterface } from '../services/products.service';
 
@@ -11,19 +11,19 @@ import { ProductsService, ProductInterface } from '../services/products.service'
 })
 
 export class Home {
-  products: ProductInterface[] = [];
-  loading: boolean = true;
-  constructor(private productsService: ProductsService) {}
-
+  products : ProductInterface[] = [];
+  loading : boolean = true;
+  productsService = inject(ProductsService);
   ngOnInit() {
-    this.productsService.getProducts().subscribe({
+    const products_observable = this.productsService.getProducts();
+    products_observable.subscribe({
       next: (products) => {
-        this.products = products;   
-        this.loading = false;      
+        this.products = products;
+        this.loading = false;
       },
       error: (error) => {
-        console.error('Error obteniendo productos', error);
-        this.loading = false;        
+        console.error('Error obteniendo productos:', error);
+        this.loading = false;
       }
     });
   }

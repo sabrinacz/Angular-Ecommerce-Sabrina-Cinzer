@@ -90,7 +90,12 @@
             "routes": [
               "/",
               "/contact",
-              "/posts"
+              "/posts",
+              "/products/1",
+              "/products/2",  
+              "/products/3",
+              "/products/4",
+              "/products/5"
             ]
           }
         }
