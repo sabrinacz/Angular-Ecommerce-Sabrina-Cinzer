@@ -4,7 +4,6 @@ import { Home } from './home/home';
 import { Posts } from './posts/posts';
 import { Products } from './products/products';
 import { ProductDetail } from './product-detail/product-detail';
-import { RenderMode } from '@angular/ssr';
 
 export const routes: Routes = [
      {
@@ -26,7 +25,6 @@ export const routes: Routes = [
     {
         path: 'products/:product_id',
         component: ProductDetail, 
-        renderMode: RenderMode.Server,
     },
 ];
 

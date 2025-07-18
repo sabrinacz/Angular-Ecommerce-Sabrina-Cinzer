@@ -83,6 +83,18 @@
               "src/styles.css"
             ]
           }
+        },
+        "prerender": {
+          "builder": "@angular/platform-server:prerender",
+          "options": {
+            "routes": [
+              "/products/1", // Add your specific routes here
+              "/products/2",
+              "/products/3",
+              "/products/4",
+              "/products/5"
+            ]
+          }
         }
       }
     }
