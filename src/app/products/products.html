@@ -18,7 +18,7 @@
             <div class="product-pricing">
             @if(product.discount) {
                 <span class="product-original-price">${{product.price}}</span>
-                <span class="product-discount">-{{product.discount}}</span>
+                <span class="product-discount">-{{product.discount}}%</span>
             } @else {
                 <span class="product-original-price no-discount">${{product.price}}</span>
             }
