@@ -1,22 +1,24 @@
-<div class="product-detail">
+@if(product_selected){ 
+  <div class="product-detail">
   <div class="product-image">
-    <img src="{{product_selected?.img}}" alt="Imagen de {{product_selected?.title}}" />
+    <img src="{{product_selected.img}}" alt="Imagen de {{product_selected.title}}" />
   </div>
 
   <div class="product-content">
-    <h1 class="product-title">{{product_selected?.title}}</h1>
-    <p class="product-description">{{product_selected?.description}}</p>
+    <h1 class="product-title">{{product_selected.title}}</h1>
+    <p class="product-description">{{product_selected.description}}</p>
 
     <div class="product-pricing">
-      @if(product_selected?.discount) {
-        <span class="original-price">${{product_selected?.price}}</span>
-        <span class="discount-tag">-{{product_selected?.discount}}%</span>
+      @if(product_selected.discount) {
+        <span class="original-price">${{product_selected.price}}</span>
+        <span class="discount-tag">-{{product_selected.discount}}%</span>
       } @else {
-        <span class="original-price no-discount">${{product_selected?.price}}</span>
+        <span class="original-price no-discount">${{product_selected.price}}</span>
       }
-      <h2 class="final-price">${{product_selected?.final_price}}</h2>
+      <h2 class="final-price">${{product_selected.final_price}}</h2>
     </div>
 
     <button class="add-to-cart">Agregar al carrito</button>
   </div>
 </div>
+}
