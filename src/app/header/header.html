@@ -1,7 +1,7 @@
 <header>
   <div class="menu-container">
     <div class="logo">
-      <a href="/"><img class="logo-img" alt="Labubu shop" src="https://i.ibb.co/B9dcc7P/labubu.png"></a>
+      <a routerLink="/"><img class="logo-img" alt="Labubu shop" src="https://i.ibb.co/B9dcc7P/labubu.png"></a>
     </div>
 
     <nav>
@@ -9,10 +9,10 @@
         {{ menuAbierto ? '✖' : '☰' }}
       </div>
       <ul class="nav-links" [class.active]="menuAbierto">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/contact">Contacto</a></li>
-        <li><a href="/posts">Posteos</a></li>
-        <li><a href="/products">Productos</a></li>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+        <li><a routerLink="/posts">Posteos</a></li>
+        <li><a routerLink="/products">Productos</a></li>
       </ul>
     </nav>
   </div>
