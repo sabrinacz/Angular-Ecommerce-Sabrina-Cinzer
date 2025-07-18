@@ -6,11 +6,11 @@
    <div class="products-container">
     @for(product of products; track product.id) {
         <div class="product-card">
-        <a routerLink="/products/{{product.id}}" class="product-link">
+        <a href="/products/{{product.id}}" class="product-link">
             <img src="{{product.img}}" alt="Imagen de {{product.title}}" />
         </a>
         <div class="product-info">
-            <a routerLink="/products/{{product.id}}" class="product-link">
+            <a href="/products/{{product.id}}" class="product-link">
                 <h2 class="product-title">{{product.title}}</h2>
             </a>
             <p class="product-description">{{product.description}}</p>

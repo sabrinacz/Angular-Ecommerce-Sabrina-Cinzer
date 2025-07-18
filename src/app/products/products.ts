@@ -2,12 +2,10 @@ import { Component, inject } from '@angular/core';
 import { ProductInterface } from '../services/products.service';
 import { ProductsService } from '../services/products.service'; 
 import { Observable } from 'rxjs';
-import { RouterModule } from '@angular/router';
-
 
 @Component({
   selector: 'app-products',
-  imports: [RouterModule],
+  imports: [],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
