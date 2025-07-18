@@ -10,7 +10,7 @@
     <div class="product-pricing">
       @if(product_selected?.discount) {
         <span class="original-price">${{product_selected?.price}}</span>
-        <span class="discount-tag">-{{product_selected?.discount}}</span>
+        <span class="discount-tag">-{{product_selected?.discount}}%</span>
       } @else {
         <span class="original-price no-discount">${{product_selected?.price}}</span>
       }

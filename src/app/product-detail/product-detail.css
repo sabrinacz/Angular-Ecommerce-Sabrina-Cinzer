@@ -61,7 +61,7 @@
 }
 
 .discount-tag {
-  background: #d32f2f;
+  background: #2e7d32;
   color: #fff;
   font-size: 1rem;
   padding: 0.2rem 0.7rem;
@@ -71,7 +71,6 @@
 
 .final-price {
   font-size: 2rem;
-  color: #2e7d32;
   font-weight: 700;
   margin-left: 1rem;
 }
@@ -89,7 +88,7 @@
 }
 
 .add-to-cart:hover {
-  background: #555;
+  background: #1e043c;
 }
 
 @media (max-width: 700px) {
