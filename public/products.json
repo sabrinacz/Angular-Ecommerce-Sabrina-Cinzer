@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Peluche Labubu Hehe",
+    "price": 1200,
+    "final_price": 840,
+    "discount": 30,
+    "img": "https://labubukeychain.shop/cdn/shop/files/hehe.jpg?v=1750083870",
+    "installments": 3,
+    "is_same_price_with_installments": true,
+    "free_shipping": true,
+    "free_shipping_date": "2025-07-31",
+    "description": "¡Hehe es el peluche Labubu más juguetón y amigable! Con su adorable sonrisa, este tierno peluche será el compañero perfecto para abrazar y compartir momentos divertidos."
+  },
+  {
+    "id": 2,
+    "title": "Peluche Labubu Baba",
+    "price": 1500,
+    "final_price": 1050,
+    "discount": 30,
+    "img": "https://labubukeychain.shop/cdn/shop/files/baba.jpg?v=1750080190",
+    "installments": 4,
+    "is_same_price_with_installments": true,
+    "free_shipping": true,
+    "free_shipping_date": "2025-07-31",
+    "description": "Baba es el peluche más dulce de la colección Labubu. Con sus ojos grandes y su ternura infinita, se convertirá en el amigo perfecto para todos los momentos de cariño."
+  },
+  {
+    "id": 3,
+    "title": "Peluche Labubu Sisi",
+    "price": 1000,
+    "final_price": 700,
+    "discount": 30,
+    "img": "https://labubukeychain.shop/cdn/shop/files/sisi.jpg?v=1750076127",
+    "installments": 3,
+    "is_same_price_with_installments": true,
+    "free_shipping": true,
+    "free_shipping_date": "2025-07-31",
+    "description": "Sisi es un peluche que siempre tiene una sonrisa en el rostro. Con su estilo único y su actitud alegre, es ideal para aquellos que buscan un amigo siempre positivo y lleno de energía."
+  },
+  {
+    "id": 4,
+    "title": "Peluche Labubu Dada",
+    "price": 1300,
+    "final_price": 910,
+    "discount": 30,
+    "img": "https://labubukeychain.shop/cdn/shop/files/dada.jpg?v=1750082867",
+    "installments": 3,
+    "is_same_price_with_installments": true,
+    "free_shipping": true,
+    "free_shipping_date": "2025-07-31",
+    "description": "Dada es el peluche que conquista corazones con su personalidad encantadora. Su dulzura y su ternura lo convierten en el regalo perfecto para cualquier ocasión especial."
+  },
+  {
+    "id": 5,
+    "title": "Peluche Labubu Ququ",
+    "price": 1100,
+    "final_price": 770,
+    "discount": 30,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhbTa6kWAWZB6ElDVHvR3qJwSti3XDsBiUw&s",
+    "installments": 2,
+    "is_same_price_with_installments": true,
+    "free_shipping": true,
+    "free_shipping_date": "2025-07-31",
+    "description": "Ququ  es el peluche más tierno de Labubu, conocido por su amor incondicional y su capacidad para brindar consuelo. Es perfecto para abrazar en cualquier momento del día y compartir mucho amor."
+  }
+]

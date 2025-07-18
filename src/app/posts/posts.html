@@ -1,0 +1,16 @@
+@if(loading) {
+    <p>Cargando posts...</p>
+} @else if(error) {
+    <p>Error al cargar los posts: {{error}}</p>
+} @else if(posts.length === 0) {
+    <p>No hay posts disponibles.</p>
+} @else {
+    <div class="posts-container">
+        @for(post of posts; track post.id) {
+            <div class="post-card">
+                <h2>{{post.title}}</h2>
+                <p>{{post.body}}</p>
+            </div>
+        }
+    </div>
+}

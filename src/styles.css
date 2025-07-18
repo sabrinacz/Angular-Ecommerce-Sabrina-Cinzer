@@ -34,6 +34,10 @@ p {
     font-family: sans-serif;
 }
 
+a {
+    cursor:pointer;
+}
+
 h1 {
     font-size: 3.125rem;
     color: var(--gray-900);
@@ -41,4 +45,9 @@ h1 {
     line-height: 100%;
     letter-spacing: -0.125rem;
     margin: 0;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
 }

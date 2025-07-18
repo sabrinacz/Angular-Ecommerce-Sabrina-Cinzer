@@ -1,0 +1,32 @@
+@if(loading){ 
+    <p>Cargando productos...</p>
+} @else if(products.length === 0) {
+    <p>No hay productos disponibles.</p>
+} @else {
+   <div class="products-container">
+    @for(product of products; track product.id) {
+        <div class="product-card">
+        <a href="/products/{{product.id}}" class="product-link">
+            <img src="{{product.img}}" alt="Imagen de {{product.title}}" />
+        </a>
+        <div class="product-info">
+            <a href="/products/{{product.id}}" class="product-link">
+                <h2 class="product-title">{{product.title}}</h2>
+            </a>
+            <p class="product-description">{{product.description}}</p>
+
+            <div class="product-pricing">
+            @if(product.discount) {
+                <span class="product-original-price">${{product.price}}</span>
+                <span class="product-discount">-{{product.discount}}</span>
+            } @else {
+                <span class="product-original-price no-discount">${{product.price}}</span>
+            }
+            </div>
+
+            <h3 class="product-final-price">${{product.final_price}}</h3>
+        </div>
+        </div>
+    }
+</div>
+}

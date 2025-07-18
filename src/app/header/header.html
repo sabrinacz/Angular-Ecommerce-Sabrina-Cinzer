@@ -1,6 +1,8 @@
 <header>
   <div class="menu-container">
-    <div class="logo">MiLogo</div>
+    <div class="logo">
+      <a routerLink="/"><img class="logo-img" alt="Labubu shop" src="https://i.ibb.co/B9dcc7P/labubu.png"></a>
+    </div>
 
     <nav>
       <div class="menu-toggle" (click)="toggleMenu()">
@@ -8,9 +10,9 @@
       </div>
       <ul class="nav-links" [class.active]="menuAbierto">
         <li><a routerLink="/">Inicio</a></li>
-        <li><a routerLink="/contacto">Contacto</a></li>
-        <li><a routerLink="/acerca">Acerca</a></li>
-        <li><a routerLink="/contacto">Contacto</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+        <li><a routerLink="/posts">Posteos</a></li>
+        <li><a routerLink="/products">Productos</a></li>
       </ul>
     </nav>
   </div>

@@ -1,7 +1,12 @@
 header {
-  background-color: #333;
+  background-color: #222;
   color: white;
   padding: 1rem 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 .menu-container{
@@ -40,6 +45,7 @@ nav {
 }
 
 .menu-toggle {
+  display: none;
   position: relative;
   font-size: 1.8rem;
   cursor: pointer;
