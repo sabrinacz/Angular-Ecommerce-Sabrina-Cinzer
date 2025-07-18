@@ -5,11 +5,11 @@ import { ProductsService } from './services/products.service';
 export const serverRoutes: ServerRoute[] = [
   {
     path: '**',
-    renderMode: RenderMode.Prerender
+    renderMode: RenderMode.Server
   },
   {
     path: 'products/:product_id',
-    renderMode: RenderMode.Prerender,
+    renderMode: RenderMode.Server,
     async getPrerenderParams() {
       const productsService = inject(ProductsService);
       const products = await firstValueFrom(productsService.getProducts());
